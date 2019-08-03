@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <include layout="@layout/nav_bar" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/first" />
+
+
+        <com.example.welcome.views.InputView
+            android:id="@+id/input_old_password"
+            android:layout_marginTop="@dimen/btnHeight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+            app:input_hint="请输入原密码"
+            app:input_icon="@mipmap/suo"
+            app:is_password="true">
+
+        </com.example.welcome.views.InputView>
+        <View
+            style="@style/Line"></View>
+
+        <com.example.welcome.views.InputView
+            android:id="@+id/input_passward"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+
+            app:input_hint="请输入新密码"
+            app:input_icon="@mipmap/suo"
+            app:is_password="false">
+
+        </com.example.welcome.views.InputView>
+
+        <View
+            style="@style/Line"></View>
+
+        <com.example.welcome.views.InputView
+            android:id="@+id/input_passward_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inputViewHeight"
+            app:input_hint="请确认密码"
+            app:input_icon="@mipmap/suo"
+            app:is_password="false">
+
+        </com.example.welcome.views.InputView>
+        <View
+            style="@style/Line"></View>
+
+        <Button
+            style="@style/commitBtn"
+            android:text="确定修改"
+            android:onClick="onLoginClick"
+            android:layout_marginTop="60dp"
+            />
+
+    </LinearLayout>
+

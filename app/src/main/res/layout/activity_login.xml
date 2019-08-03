@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <include layout="@layout/nav_bar" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/first" />
+
+<com.example.welcome.views.InputView
+    android:id="@+id/input_phone"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/inputViewHeight"
+    android:layout_marginTop="@dimen/marginSize"
+    app:input_icon="@mipmap/phone"
+    app:input_hint="手机号"
+    app:is_password="false">
+
+</com.example.welcome.views.InputView>
+
+    <View
+    style="@style/Line"></View>
+
+    <com.example.welcome.views.InputView
+    android:id="@+id/input_passward"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/inputViewHeight"
+    android:layout_marginTop="@dimen/marginSize"
+    app:input_hint="密码6—16位"
+    app:input_icon="@mipmap/suo"
+    app:is_password="true" />
+    <View
+    style="@style/Line"></View>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/marginSize"
+    android:text="立即注册"
+    android:layout_marginTop="25dp"
+    android:textSize="@dimen/infoSize"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#0E24E9"
+    android:onClick="onRegisterClick"/>
+
+    <Button
+    style="@style/commitBtn"
+    android:text="登   陆"
+    android:onClick="onCommitClick"
+    android:layout_marginTop="@dimen/marginSize"/>
+
+
+
+
+        </LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical">
+  <include layout="@layout/nav_bar" />
+
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/inputViewHeight"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:paddingRight="@dimen/marginSize"
+      android:paddingLeft="@dimen/marginSize">
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="我的位置"
+          android:textSize="13dp"
+          android:textColor="#CE494646"/>
+
+      <TextView
+          android:background="#F5EA08"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="芜湖" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/search" />
+    <EditText
+
+        android:id="@+id/et_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1B64645C"
+        android:hint="搜索 美食 景点 文化"
+        android:paddingLeft="@dimen/marginSize"
+        android:paddingRight="@dimen/marginSize"
+        android:textSize="@dimen/titleSize"/>
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="35dp"
+        android:src="@mipmap/jia" />
+  </LinearLayout>
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/marginSize"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="22dp"
+            android:background="@color/maincolor" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginTabSize"
+            android:text="推荐景点  :"
+            android:textColor="#000000"
+            android:textSize="@dimen/infoSize"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/ry_grid"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/marginSize"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="22dp"
+            android:background="@color/maincolor" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginTabSize"
+            android:text="无敌美食  :"
+            android:textColor="#000000"
+            android:textSize="@dimen/infoSize"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/ry_scence"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="23dp"
+          android:layout_margin="@dimen/marginSize"
+          android:gravity="center_vertical"
+          android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="22dp"
+            android:background="@color/maincolor" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginTabSize"
+            android:text=" 安徽文化  :"
+            android:textColor="#000000"
+            android:textSize="@dimen/infoSize"
+            android:textStyle="bold" />
+
+      </LinearLayout>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_list"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.welcome.views.WEqualsHimageView
+            android:id="@+id/meishi_Image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/wuweibanya"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_margin="@dimen/pictureMarginSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="强烈推荐"
+                android:textColor="#F11C1C"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/meishi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="无为板鸭"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FA3A3737"
+        android:textStyle="bold"/>
+
+</LinearLayout>
